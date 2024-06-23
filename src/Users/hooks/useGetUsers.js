@@ -11,6 +11,7 @@ export const useGetUsers = () =>{
         try{
             setLoading(true);
             const response = await getUsers();
+            console.log({response});
             setUsers(response.users);
             setLoading(false);
         }
